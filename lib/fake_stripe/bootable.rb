@@ -5,7 +5,7 @@ require "fake_stripe/utils"
 module Bootable
   def boot(port = FakeStripe::Utils.find_available_port)
     instance = new
-    Capybara::Server.new(instance, port: port).tap(&:boot)
+    Capybara::Server.new(instance, port).tap(&:boot)
   end
 
   def boot_once
