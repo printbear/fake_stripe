@@ -36,7 +36,7 @@ module FakeStripe
     FakeStripe::StubStripeJS.boot_once
     FakeStripe::StubStripeConnect.boot_once
     puts "Servers started in ports -> js.stripe:#{FakeStripe::StubStripeJS.server_port} and api.stripe:#{FakeStripe::StubStripeConnect.server_port}"
-    stub_request(:any, /api.stripe.com/).to_rack(FakeStripe::StubApp)
+    # stub_request(:any, /api.stripe.com/).to_rack(FakeStripe::StubApp)
   end
 end
 
