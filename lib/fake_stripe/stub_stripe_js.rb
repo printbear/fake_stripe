@@ -23,7 +23,7 @@ module FakeStripe
     end
 
     get "/v3/" do
-      file_path = File.join(File.dirname(__FILE__), "/assets/v3.js")
+      file_path = File.join(File.dirname(__FILE__), "/assets/v33.js")
 
       content_type "text/javascript"
       status 200
